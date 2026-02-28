@@ -702,13 +702,12 @@ body{
 
 .imgRain{
     position: fixed;
-    top: -10%;
+    top: -100px;
     z-index: 9999;
-    transition: top 5s linear, transform 5s linear;
+    transition: top 5s linear;
     pointer-events: none;
 }
 
 .imgRain img{
-    width: 80px; /* chỉnh to nhỏ tùy bạn */
+    border-radius: 10px;
 }
-
