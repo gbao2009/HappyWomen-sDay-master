@@ -700,14 +700,3 @@ body{
     width: 100%;
 }
 
-.imgRain{
-    position: fixed;
-    top: -100px;
-    z-index: 9999;
-    transition: top 5s linear;
-    pointer-events: none;
-}
-
-.imgRain img{
-    border-radius: 10px;
-}
