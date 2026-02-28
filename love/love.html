@@ -348,7 +348,18 @@
                         let images = [
                             "image/love3.jpg",
                             "image/love4.jpg",
-                            "image/love5.jpg"
+                            "image/love5.jpg",
+                            "image/love6.jpg",
+                            "image/love7.jpg",
+                            "image/love8.jpg",
+                            "image/love9.jpg",
+                            "image/love10.jpg",
+                            "image/love11.jpg",
+                            "image/love12.jpg",
+                            "image/love13.jpg",
+                            "image/love14.jpg",
+                            "image/love15.jpg",
+
                         ];
 
                         let randomImg = images[Math.floor(Math.random() * images.length)];
@@ -358,10 +369,13 @@
 
                         let left = Math.random() * 100;
                         let rotate = Math.random() * 360;
+                        let size = 50 + Math.random() * 50; // random size
+                
 
                         img.style.left = left + "%";
                         img.style.transform = `rotate(${rotate}deg)`;
-
+                        img.querySelector("img").style.width = size + "px";
+                        
                         setTimeout(()=>{
                             img.style.top = "100%";
                         },50);
@@ -372,10 +386,7 @@
 
                     },400);
 
-                    // dừng mưa ảnh sau 6 giây
-                    setTimeout(()=>{
-                        clearInterval(rain);
-                    },6000);
+                    // ===== KẾT THÚC ẢNH RƠI =====
                 })
                     
                 })
